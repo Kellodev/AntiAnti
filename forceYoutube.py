@@ -16,9 +16,9 @@ def downloadYouTube(videourl, path):
 characters = string.ascii_letters + string.digits
 videoid = ''.join(random.choice(characters) for _ in range(8))
 
-newpath = r'./youtubeForceDownloadedVideos/'
+newpath = r'./output/youtubeForceDownloadedVideos/'
 
-print(f"Video ({videourl2}) saved as 'video{videoid}' in ./youtubeForceDownloadedVideos/")
+print(f"Video ({videourl2}) saved as 'video{videoid}' in ./output/youtubeForceDownloadedVideos/")
 # Capture the full path of the downloaded video
 downloaded_file_path = downloadYouTube(videourl2, newpath)
 

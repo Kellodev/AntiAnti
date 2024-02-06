@@ -13,9 +13,9 @@ def downloadYouTube(videourl, path):
 characters = string.ascii_letters + string.digits
 videoid = ''.join(random.choice(characters) for _ in range(8))
 
-newpath = r'./youtubeDownloadedVideos/' 
+newpath = r'./output/youtubeDownloadedVideos/' 
 if not os.path.exists(newpath):
     os.makedirs(newpath)
 
-print("Video (" + videourl2 + ') saved as "video' + videoid + '" in ./youtubeDownloadedVideos/')
-downloadYouTube(videourl2, './youtubeDownloadedVideos/video' + videoid)
+print("Video (" + videourl2 + ') saved as "video' + videoid + '" in ./output/youtubeDownloadedVideos/')
+downloadYouTube(videourl2, './output/youtubeDownloadedVideos/video' + videoid)

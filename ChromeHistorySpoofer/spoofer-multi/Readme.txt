@@ -1,0 +1,1 @@
+Spoofs to multiple diffrent URL's, change urls in the "multispoofer.py" file.
